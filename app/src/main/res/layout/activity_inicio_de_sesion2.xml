@@ -23,7 +23,7 @@
         android:id="@+id/button1"
         android:layout_width="98dp"
         android:layout_height="40dp"
-        android:text="Manu cagon"
+        android:text="Chotooo"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
