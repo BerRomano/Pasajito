@@ -23,12 +23,14 @@
         android:id="@+id/button1"
         android:layout_width="98dp"
         android:layout_height="40dp"
-        android:text="Ema rey hermoso"
+        android:text="Iniciar sesion"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1"
+        app:layout_constraintVertical_bias="0.22"
         tools:visibility="visible" />
 
     <EditText
@@ -52,4 +54,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidó su contraseña?"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="683dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
