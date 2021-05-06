@@ -5,24 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_700"
-    tools:context=".InicioDeSesion2">
+    tools:context=".InicioDeSesion">
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="184dp"
         android:layout_height="185dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/taxi__3_" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="98dp"
-        android:layout_height="40dp"
+        android:layout_width="95dp"
+        android:layout_height="39dp"
         android:layout_marginTop="20dp"
         android:text="Iniciar sesion"
         android:visibility="visible"
@@ -32,17 +32,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1"
         app:layout_constraintVertical_bias="0.22"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        tools:layout_editor_absoluteY="624dp"
+        tools:layout_editor_absoluteX="149dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -54,6 +56,7 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 

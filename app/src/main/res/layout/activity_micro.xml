@@ -24,11 +24,15 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="278dp"
-        android:layout_height="218dp"
-        app:srcCompat="@drawable/micros_buses1"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="159dp" />
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        app:srcCompat="@drawable/micros_buses1" />
 
     <Button
         android:id="@+id/button3"
