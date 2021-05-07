@@ -81,13 +81,13 @@
         android:layout_marginLeft="16dp"
         android:shadowColor="#2B2B2B"
         android:text="Listo"
-        android:textColorHighlight="#3F51B5"
+        android:textColorHighlight="#009688"
         app:backgroundTint="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.97"
-        app:strokeColor="#151313" />
+        app:strokeColor="#009688" />
 
     <Button
         android:id="@+id/button16"

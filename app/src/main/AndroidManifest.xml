@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pasajito">
-        <activity android:name=".MetodoDePago"></activity>
+        <activity android:name=".registro_usuarios"></activity>
+        <activity android:name=".MetodoDePago" />
         <activity android:name=".newPassword" />
         <activity android:name=".Micro" />
         <activity android:name=".MenuPrincipal" />
