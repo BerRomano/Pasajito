@@ -1,6 +1,8 @@
 package com.example.pasajito
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_inicio_de_sesion.*
 
 
 class InicioDeSesion : AppCompatActivity() {
@@ -13,7 +15,10 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Aimee", "291915"),
             Usuario("Emanuel", "Lore123")
         )
-        inicioSesion.setOnClickListener
+        inicioSesion.setOnClickListener {
+            val intent = Intent(this, Pagar::class.java)
+            startActivity(intent)
+        }
 
         //override fun onStart() {
         //  super.onStart()

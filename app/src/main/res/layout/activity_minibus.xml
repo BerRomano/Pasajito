@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Minibus" />
+        app:srcCompat="@drawable/minibus" />
 
     <Button
         android:id="@+id/button13"
