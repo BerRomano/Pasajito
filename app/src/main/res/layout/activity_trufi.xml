@@ -31,7 +31,7 @@
       app:srcCompat="@drawable/trufi" />
 
   <Button
-      android:id="@+id/button10"
+      android:id="@+id/pagar"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="65dp"
@@ -41,7 +41,7 @@
       app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
   <Button
-      android:id="@+id/button11"
+      android:id="@+id/verRutas"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="5dp"
@@ -49,6 +49,6 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/button10"
+      app:layout_constraintTop_toBottomOf="@+id/pagar"
       app:layout_constraintVertical_bias="0.292" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/inicioSesion"
-        android:layout_width="95dp"
-        android:layout_height="39dp"
+        android:layout_width="110dp"
+        android:layout_height="61dp"
         android:layout_marginTop="20dp"
         android:text="Iniciar sesion"
         android:visibility="visible"
@@ -31,10 +31,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1"
-        app:layout_constraintVertical_bias="0.22"
-        tools:visibility="visible"
-        tools:layout_editor_absoluteY="624dp"
-        tools:layout_editor_absoluteX="149dp" />
+        app:layout_constraintVertical_bias="0.105"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress1"
@@ -61,16 +59,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/registrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="146dp"
-        android:layout_marginRight="146dp"
         android:text="Registrate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inicioSesion" />
 
@@ -88,7 +85,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/registrate" />
 
     <TextView
         android:id="@+id/textView12"
