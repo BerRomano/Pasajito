@@ -15,7 +15,7 @@
         <activity android:name=".MetodoDePago" />
         <activity android:name=".newPassword" />
         <activity android:name=".Micro" />
-        <activity android:name=".MenuPrincipal" />
+        <activity android:name=".menuPrincipal" />
         <activity
             android:name=".InicioDeSesion"
             android:label="@string/title_activity_inicio_de_sesion"
