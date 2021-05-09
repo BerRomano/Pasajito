@@ -20,7 +20,7 @@ class InicioDeSesion : AppCompatActivity() {
             startActivity(intent)
         }
         registrate.setOnClickListener {
-            val intent = Intent(this, registroUsuarios::class.java)
+            val intent = Intent(this, RegistroDeUsuarios::class.java)
             startActivity(intent)
         }
 

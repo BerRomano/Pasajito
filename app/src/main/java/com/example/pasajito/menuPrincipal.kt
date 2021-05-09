@@ -10,7 +10,7 @@ class menuPrincipal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
     trufi.setOnClickListener({
-        val intent = Intent(this, Trufi::class.java)
+        val intent = Intent(this, minibus::class.java)
         startActivity(intent)
     })
 

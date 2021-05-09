@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pasajito">
-        <activity android:name=".rutas"></activity>
+        <activity android:name=".RegistroDeUsuarios"></activity>
+        <activity android:name=".rutas" />
         <activity android:name=".Pagar" />
         <activity android:name=".minibus" />
         <activity android:name=".MetodoDePago" />
