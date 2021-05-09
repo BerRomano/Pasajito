@@ -16,7 +16,7 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Emanuel", "Lore123")
         )
         inicioSesion.setOnClickListener {
-            val intent = Intent(this, Pagar::class.java)
+            val intent = Intent(this, minibus::class.java)
             startActivity(intent)
         }
 

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pasajito">
-        <activity android:name=".Pagar"></activity>
+        <activity android:name=".rutas"></activity>
+        <activity android:name=".Pagar" />
         <activity android:name=".minibus" />
         <activity android:name=".MetodoDePago" />
         <activity android:name=".newPassword" />
@@ -25,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAf6TKzWCBXAWd2m7IglS6cRiaeTGHmblc" />
     </application>
 
 </manifest>
