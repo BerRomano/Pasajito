@@ -39,6 +39,10 @@ class InicioDeSesion : AppCompatActivity() {
             val intent = Intent(this, RegistroDeUsuarios::class.java)
             startActivity(intent)
         }
+        contraseña.setOnClickListener {
+            val intent = Intent(this, NewPassword::class.java)
+            startActivity(intent)
+        }
 
 
         //override fun onStart() {
