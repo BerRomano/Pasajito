@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E63030"
+    android:background="#131E59"
     tools:context=".Micro">
 
     <TextView
@@ -12,11 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
-        android:layout_marginLeft="167dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
         android:text="Micro"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +34,7 @@
         app:srcCompat="@drawable/micros_buses1" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/pagoMicro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
@@ -54,7 +53,7 @@
         app:strokeColor="#0C0C0C" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/rutasMicro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="118dp"
@@ -68,5 +67,5 @@
         app:backgroundTint="#FFC107"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/pagoMicro" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9F80D5"
+    android:background="#131E59"
     tools:context=".MetodoDePago">
 
     <TextView
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/charges" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/puntoPasajito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -52,11 +52,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/puntoPasajito"
         app:srcCompat="@drawable/credit_card" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/VincularTarjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

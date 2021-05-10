@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/minibus" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/pagarMini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

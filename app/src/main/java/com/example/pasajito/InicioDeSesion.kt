@@ -17,7 +17,7 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Aimee", "291915"),
             Usuario("Emanuel", "Lore123")
         )
-        inicioSesion.setOnClickListener {
+       inicioSesion.setOnClickListener {
             val username = editTextTextEmailAddress1.text.toString()
             val password = editTextTextPassword1.text.toString()
              for (user in validUsersList) {
@@ -34,6 +34,7 @@ class InicioDeSesion : AppCompatActivity() {
             }
 
         }
+
         registrate.setOnClickListener {
             val intent = Intent(this, RegistroDeUsuarios::class.java)
             startActivity(intent)

@@ -14,6 +14,11 @@ class Minibus : AppCompatActivity() {
             val intent = Intent(this, Rutas::class.java)
             startActivity(intent)
         }
+
+        pagarMini.setOnClickListener {
+            val intent = Intent(this, Pagar::class.java)
+            startActivity(intent)
+        }
     }
 
 }
