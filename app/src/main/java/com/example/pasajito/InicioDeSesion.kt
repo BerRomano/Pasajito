@@ -16,7 +16,7 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Emanuel", "Lore123")
         )
         inicioSesion.setOnClickListener {
-            val intent = Intent(this, MenuPrincipa::class.java)
+            val intent = Intent(this, MenuPrincipal::class.java)
             startActivity(intent)
         }
         registrate.setOnClickListener {

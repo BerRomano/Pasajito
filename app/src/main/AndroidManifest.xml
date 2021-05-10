@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pasajito">
-        <activity android:name=".MenuPrincipa"></activity>
-        <activity android:name=".trufi" />
+        <activity android:name=".MenuPrincipal"></activity>
+        <activity android:name=".Trufi" />
         <activity android:name=".RegistroDeUsuarios" />
-        <activity android:name=".rutas" />
+        <activity android:name=".Rutas" />
         <activity android:name=".Pagar" />
-        <activity android:name=".minibus" />
+        <activity android:name=".Minibus" />
         <activity android:name=".MetodoDePago" />
-        <activity android:name=".newPassword" />
+        <activity android:name=".NewPassword" />
         <activity android:name=".Micro" />
         <activity android:name=".menuPrincipal" />
         <activity
-            android:name=".InicioDeSesion"
+            android:name=".inicioDeSesion"
             android:label="@string/title_activity_inicio_de_sesion"
             android:theme="@style/Theme.Pasajito.NoActionBar">
             <intent-filter>

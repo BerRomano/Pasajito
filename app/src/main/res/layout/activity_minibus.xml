@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#131E59"
-    tools:context=".minibus">
+    tools:context=".Minibus">
 
     <TextView
         android:id="@+id/textView17"
