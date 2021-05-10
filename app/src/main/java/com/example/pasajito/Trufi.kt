@@ -10,7 +10,7 @@ class Trufi : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trufi)
 
-        PagarTrufi.setOnClickListener {
+        pagarTrufi.setOnClickListener {
             val intent = Intent(this, Pagar::class.java)
             startActivity(intent)
         }

@@ -12,10 +12,10 @@ class InicioDeSesion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_de_sesion)
         val validUsersList = listOf(
-            Usuario("Berro", "20305060"),
-            Usuario("Daniel", "Pelota"),
-            Usuario("Aimee", "291915"),
-            Usuario("Emanuel", "Lore123")
+            Usuario("Berro", "20305060", "ber.romano27@gmail.com", 2.5),
+            Usuario("Daniel", "Pelota", "danieloliverat@gmail.com", 100.0),
+            Usuario("Aimee", "291915", "andreaniaimee@gmail.com", 8.5),
+            Usuario("Emanuel", "Lore123", "emanuelsalasali4@gmail.com", 150.0)
         )
        inicioSesion.setOnClickListener {
             val username = editTextTextEmailAddress1.text.toString()
@@ -23,8 +23,10 @@ class InicioDeSesion : AppCompatActivity() {
              for (user in validUsersList) {
                 if (user.username == username && user.password == password) {
                     val intent = Intent(this, MenuPrincipal::class.java)
-                    intent.putExtra("username", username)
+                    intent.putExtra("username", username )
                     intent.putExtra("password", password)
+                    intent.putExtra("user", user)
+                    intent.putExtra("correo", correo)
                     intent.putExtra("user", user)
                     startActivity(intent)
                     break

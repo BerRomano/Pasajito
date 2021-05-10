@@ -7,39 +7,11 @@
     android:background="#131E59"
     tools:context=".Trufi">
 
-    <Button
-        android:id="@+id/rutasTrufi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
-        android:text="Ver Rutas"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/PagarTrufi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="Pagar"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/rutasTrufi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.857" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="313dp"
         android:layout_height="175dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -50,7 +22,7 @@
         android:layout_width="85dp"
         android:layout_height="54dp"
         android:layout_marginStart="174dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="179dp"
         android:text="Trufi"
         android:textColor="#FFFFFF"
@@ -60,4 +32,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pagarTrufi"
+        android:layout_width="142dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/payment_method" />
+
+    <ImageView
+        android:id="@+id/rutasTrufi"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagarTrufi"
+        app:srcCompat="@drawable/map" />
 </androidx.constraintlayout.widget.ConstraintLayout>

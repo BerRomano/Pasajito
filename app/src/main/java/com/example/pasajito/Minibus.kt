@@ -10,7 +10,7 @@ class Minibus : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_minibus)
 
-        botonrutas.setOnClickListener {
+        rutasMini.setOnClickListener {
             val intent = Intent(this, Rutas::class.java)
             startActivity(intent)
         }
