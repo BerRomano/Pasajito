@@ -55,47 +55,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/recargar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="224dp"
-        android:text="Recargar"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saldo: "
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="0 "
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="134dp"
-        android:layout_height="141dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minibusBoton"
-        app:srcCompat="@drawable/school_bus" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -108,23 +78,63 @@
         app:srcCompat="@drawable/bus" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="126dp"
-        android:layout_height="145dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="28dp"
+        android:id="@+id/recargar"
+        android:layout_width="94dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salary" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Bs"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="164dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/taxi" />
+        app:layout_constraintTop_toBottomOf="@+id/minibusBoton"
+        app:srcCompat="@drawable/bus_mini" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/money" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="163dp"
-        android:layout_height="124dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/transport" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="143dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/taxi__1_" />
+        app:srcCompat="@drawable/icons8_taxi_64" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
