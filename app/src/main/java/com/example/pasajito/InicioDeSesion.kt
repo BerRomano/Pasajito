@@ -18,8 +18,8 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Emanuel", "Lore123")
         )
         inicioSesion.setOnClickListener {
-            val username = editTextTextEmailAddress.text.toString()
-            val password = editTextTextPassword.text.toString()
+            val username = editTextTextEmailAddress1.text.toString()
+            val password = editTextTextPassword1.text.toString()
              for (user in validUsersList) {
                 if (user.username == username && user.password == password) {
                     val intent = Intent(this, MenuPrincipal::class.java)
