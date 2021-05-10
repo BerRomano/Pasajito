@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pasajito">
 
     <application
@@ -19,9 +20,10 @@
         <activity android:name=".MetodoDePago" />
         <activity android:name=".NewPassword" />
         <activity android:name=".Micro" />
-        <activity android:name=".menuPrincipal" />
+        <activity android:name=".MenuPrincipal"
+            tools:ignore="DuplicateActivity" />
         <activity
-            android:name=".inicioDeSesion"
+            android:name=".InicioDeSesion"
             android:label="@string/title_activity_inicio_de_sesion"
             android:theme="@style/Theme.Pasajito.NoActionBar">
             <intent-filter>
