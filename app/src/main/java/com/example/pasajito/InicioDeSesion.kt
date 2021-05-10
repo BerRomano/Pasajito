@@ -2,7 +2,9 @@ package com.example.pasajito
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_inicio_de_sesion.*
+import kotlinx.android.synthetic.main.activity_new_password.*
 
 
 class InicioDeSesion : AppCompatActivity() {
@@ -16,13 +18,27 @@ class InicioDeSesion : AppCompatActivity() {
             Usuario("Emanuel", "Lore123")
         )
         inicioSesion.setOnClickListener {
-            val intent = Intent(this, MenuPrincipal::class.java)
-            startActivity(intent)
+            val username = editTextTextEmailAddress.text.toString()
+            val password = editTextTextPassword.text.toString()
+             for (user in validUsersList) {
+                if (user.username == username && user.password == password) {
+                    val intent = Intent(this, MenuPrincipal::class.java)
+                    intent.putExtra("username", username)
+                    intent.putExtra("password", password)
+                    intent.putExtra("user", user)
+                    startActivity(intent)
+                    break
+                } else {
+                    Toast.makeText(this, "Login Incorrecto!", Toast.LENGTH_LONG).show()
+                }
+            }
+
         }
         registrate.setOnClickListener {
             val intent = Intent(this, RegistroDeUsuarios::class.java)
             startActivity(intent)
         }
+
 
         //override fun onStart() {
         //  super.onStart()
