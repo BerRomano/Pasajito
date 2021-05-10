@@ -20,8 +20,6 @@
         <activity android:name=".MetodoDePago" />
         <activity android:name=".NewPassword" />
         <activity android:name=".Micro" />
-        <activity android:name=".MenuPrincipal"
-            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".InicioDeSesion"
             android:label="@string/title_activity_inicio_de_sesion"
