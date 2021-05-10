@@ -4,12 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_menu_principal.*
-import kotlinx.android.synthetic.main.activity_menu_principal.*
 
 class MenuPrincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_principal)
+        setContentView(R.layout.activity_menu_principa)
 
         minibusBoton.setOnClickListener {
             val intent = Intent(this, Minibus::class.java)
@@ -34,6 +33,7 @@ class MenuPrincipal : AppCompatActivity() {
             val intent = Intent(this, MetodoDePago::class.java)
             startActivity(intent)
 
-    }
+        }
 
+    }
 }
