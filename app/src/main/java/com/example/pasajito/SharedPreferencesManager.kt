@@ -6,22 +6,31 @@ import com.google.gson.Gson
 import java.lang.Double.compare
 
 class SharedPreferencesManager {
-        fun crearUsuario (context: Context, usuario: Usuario){
-            val usuarioJson = Gson().toJson(usuario)
+    fun crearUsuario(context: Context, usuario: Usuario) {
+        val usuarioExistente =
+                obtenerUsuarios(context).find { usuarioRegistrado -> usuarioRegistrado.username == usuario.username }
+
+        if(usuarioExistente == null) {
+            val usuariosRegistrados = obtenerUsuarios(context).toMutableList()
+            usuariosRegistrados.add(usuario)
+
+            val usuariosRegistradosJson = gson.toJson(usuariosRegistrados)
+
             val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
             val prefsEditor = prefs.edit()
-            prefsEditor.putString("usuario", usuarioJson)
+            prefsEditor.putString("usuarios", usuariosRegistradosJson)
             prefsEditor.apply()
         }
+    }
 
-    fun obtenerUsuario(context: Context): Usuario? {
+    fun obtenerUsuarios(context: Context): Usuario? {
         val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
         val usuarioJson = prefs.getString("usuario", null)
         if(usuarioJson != null) {
-            val usuario = Gson().fromJson(usuarioJson, Usuario::class.java)
-            return usuario
+            val usuarios: List<Usuario> = gson.fromJson(usuarioJson)
+            return usuarios
         } else {
-            return null
+            return listOf()
         }
     }
     fun restarSaldo(context: Context, cantidad : Double) {

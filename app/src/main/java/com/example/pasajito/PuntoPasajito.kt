@@ -17,15 +17,17 @@ class PuntoPasajito : AppCompatActivity() {
             CodigosPuntoPasajito("P6P8-QR7B", 10.0)
         )
         recargarpp.setOnClickListener {
-            val codigo = editTextTextMultiLine.text.toString()
+            val codigo = editTextTextMultiLine.text.toString().toUpperCase()
             for ( CodigosPuntoPasajito in validCodigosPuntoPasajito) {
-                if (CodigosPuntoPasajito.codigo != codigo){
-                    Toast.makeText(baseContext, "Código incorrecto", Toast.LENGTH_SHORT).show()
-                }else{
+                if (CodigosPuntoPasajito.codigo == codigo){
                     sharedPreferencesManager.sumarSaldo(this, CodigosPuntoPasajito.monto)
                     Toast.makeText(baseContext, "Código correcto saldo + "+ CodigosPuntoPasajito.monto, Toast.LENGTH_SHORT).show()
                     finish()
                 }
+                //else{
+                //    Toast.makeText(baseContext, "Código incorrecto", Toast.LENGTH_SHORT).show()
+
+                //}
             }
         }
     }
