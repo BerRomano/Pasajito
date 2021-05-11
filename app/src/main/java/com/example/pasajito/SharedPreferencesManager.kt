@@ -22,10 +22,21 @@ class SharedPreferencesManager {
             return null
         }
     }
-    fun actualizarSaldo(context: Context, cantidad : Double) {
+    fun restarSaldo(context: Context, cantidad : Double) {
         val usuario = obtenerUsuario(context)
         val nuevoSaldo = usuario?.saldo?.minus(cantidad)
         usuario?.saldo= nuevoSaldo ?: 0.0
         crearUsuario(context, usuario!!)
+    }
+    fun sumarSaldo(context: Context, cantidad : Double) {
+        val usuario = obtenerUsuario(context)
+        val nuevoSaldo = usuario?.saldo?.plus(cantidad)
+        usuario?.saldo = nuevoSaldo ?: 0.0
+        crearUsuario(context, usuario!!)
+    }
+    fun obtenerSaldo(context: Context): Double? {
+        val usuario = obtenerUsuario(context)
+        val saldo = usuario?.saldo
+        return saldo
     }
 }

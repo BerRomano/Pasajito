@@ -10,6 +10,7 @@ class MenuPrincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principa)
+        textView2.text = sharedPreferencesManager.obtenerSaldo(this).toString()
 
         minibusBoton.setOnClickListener {
             val intent = Intent(this, Minibus::class.java)
@@ -35,6 +36,7 @@ class MenuPrincipal : AppCompatActivity() {
             startActivity(intent)
 
         }
+
 
     }
 }

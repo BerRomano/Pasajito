@@ -37,7 +37,7 @@ class Pagar : AppCompatActivity() {
                 // the content and format of scan message
                // messageText.setText(intentResult.contents)
                 //messageFormat.setText(intentResult.formatName)
-                sharedPreferencesManager.actualizarSaldo(this, intentResult.contents.toDouble())
+                sharedPreferencesManager.restarSaldo(this, intentResult.contents.toDouble())
                 Toast.makeText(baseContext, intentResult.contents, Toast.LENGTH_SHORT).show()
             }
         } else {
