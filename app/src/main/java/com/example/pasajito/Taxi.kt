@@ -15,7 +15,7 @@ class Taxi : AppCompatActivity() {
             startActivity(intent)
         }
         lineasTaxi.setOnClickListener {
-            val intent = Intent(this, Rutas::class.java)
+            val intent = Intent(this, ListaTaxis::class.java)
             startActivity(intent)
         }
     }
