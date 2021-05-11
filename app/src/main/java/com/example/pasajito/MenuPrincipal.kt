@@ -36,7 +36,9 @@ class MenuPrincipal : AppCompatActivity() {
             startActivity(intent)
 
         }
-
-
+    }
+    override fun onRestart() {
+        super.onRestart()
+        textView2.text = sharedPreferencesManager.obtenerSaldo(this).toString()
     }
 }

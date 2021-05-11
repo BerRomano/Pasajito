@@ -1,7 +1,9 @@
 package com.example.pasajito
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
+import android.widget.Toast
 import com.google.gson.Gson
+import java.lang.Double.compare
 
 class SharedPreferencesManager {
         fun crearUsuario (context: Context, usuario: Usuario){
@@ -25,6 +27,12 @@ class SharedPreferencesManager {
     fun restarSaldo(context: Context, cantidad : Double) {
         val usuario = obtenerUsuario(context)
         val nuevoSaldo = usuario?.saldo?.minus(cantidad)
+        //val n= nuevoSaldo?.let { compare(it, 0.0) }
+        //if (n != null) {
+          //  if (n<0.0){
+            //    Toast.makeText(baseContext, "Saldo insuficiente", Toast.LENGTH_SHORT).show()
+            //}
+        //}
         usuario?.saldo= nuevoSaldo ?: 0.0
         crearUsuario(context, usuario!!)
     }
