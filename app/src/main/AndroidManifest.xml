@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pasajito">
-        <activity android:name=".VincularCuenta"></activity>
+        <activity android:name=".ListaTaxis"></activity>
+        <activity android:name=".VincularCuenta" />
         <activity android:name=".PuntoPasajito" />
         <activity android:name=".Taxi" />
         <activity android:name=".MenuPrincipal" />
