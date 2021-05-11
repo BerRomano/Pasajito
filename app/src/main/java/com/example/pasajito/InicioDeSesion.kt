@@ -16,19 +16,15 @@ class InicioDeSesion : AppCompatActivity() {
            val username = editTextTextEmailAddress1.text.toString()
            val password = editTextTextPassword1.text.toString()
            val correo = editTextTextEmailAddress1.text.toString()
-           val validUser = sharedPreferencesManager.obtenerUsuario(this)
-           if(validUser != null) {
-               if((validUser.username == username || validUser.correo == correo) && validUser.password == password) {
-                   val intent = Intent(this, MenuPrincipal::class.java)
-                   intent.putExtra("username", username)
-                   intent.putExtra("password", password)
-                   intent.putExtra("user", validUser)
-                   startActivity(intent)
+           val validUsers = sharedPreferencesManager.obtenerUsuarios(this)
+           for (validUser in validUsers) {
+                   if ((validUser.username == username || validUser.correo == correo) && validUser.password == password) {
+                       val intent = Intent(this, MenuPrincipal::class.java)
+
+                       startActivity(intent)
                }
            }
-
         }
-
         registrate.setOnClickListener {
             val intent = Intent(this, RegistroDeUsuarios::class.java)
             startActivity(intent)

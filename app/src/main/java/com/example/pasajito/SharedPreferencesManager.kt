@@ -1,14 +1,14 @@
 package com.example.pasajito
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
-import android.widget.Toast
 import com.google.gson.Gson
-import java.lang.Double.compare
+import com.google.gson.reflect.TypeToken
+
 
 class SharedPreferencesManager {
     fun crearUsuario(context: Context, usuario: Usuario) {
         val usuarioExistente =
-                obtenerUsuarios(context).find { usuarioRegistrado -> usuarioRegistrado.username == usuario.username }
+                obtenerUsuarios(context).find { usuariosRegistrados -> usuariosRegistrados.username == usuario.username }
 
         if(usuarioExistente == null) {
             val usuariosRegistrados = obtenerUsuarios(context).toMutableList()
@@ -23,7 +23,7 @@ class SharedPreferencesManager {
         }
     }
 
-    fun obtenerUsuarios(context: Context): Usuario? {
+    fun obtenerUsuarios(context: Context): List<Usuario> {
         val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
         val usuarioJson = prefs.getString("usuario", null)
         if(usuarioJson != null) {
@@ -34,25 +34,19 @@ class SharedPreferencesManager {
         }
     }
     fun restarSaldo(context: Context, cantidad : Double) {
-        val usuario = obtenerUsuario(context)
+        val usuario = obtenerUsuarios(context)
         val nuevoSaldo = usuario?.saldo?.minus(cantidad)
-        //val n= nuevoSaldo?.let { compare(it, 0.0) }
-        //if (n != null) {
-          //  if (n<0.0){
-            //    Toast.makeText(baseContext, "Saldo insuficiente", Toast.LENGTH_SHORT).show()
-            //}
-        //}
         usuario?.saldo= nuevoSaldo ?: 0.0
         crearUsuario(context, usuario!!)
     }
     fun sumarSaldo(context: Context, cantidad : Double) {
-        val usuario = obtenerUsuario(context)
+        val usuario = obtenerUsuarios(context)
         val nuevoSaldo = usuario?.saldo?.plus(cantidad)
         usuario?.saldo = nuevoSaldo ?: 0.0
         crearUsuario(context, usuario!!)
     }
     fun obtenerSaldo(context: Context): Double? {
-        val usuario = obtenerUsuario(context)
+        val usuario = obtenerUsuarios(context)
         val saldo = usuario?.saldo
         return saldo
     }
