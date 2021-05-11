@@ -31,7 +31,7 @@ class MenuPrincipal : AppCompatActivity() {
             val intent = Intent(this, Taxi::class.java)
             startActivity(intent)
         }
-        recargar.setOnClickListener {
+        recargarpp.setOnClickListener {
             val intent = Intent(this, MetodoDePago::class.java)
             startActivity(intent)
 

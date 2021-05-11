@@ -1,29 +1,34 @@
 package com.example.pasajito
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.content.Intent
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_punto_pasajito.*
 
 class PuntoPasajito : AppCompatActivity() {
+    val sharedPreferencesManager = SharedPreferencesManager()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_punto_pasajito)
         val validCodigosPuntoPasajito = listOf(
-            CodigosPuntoPasajito("AD53-B2T5", 5.0),
-            CodigosPuntoPasajito("M8Y37-47B2", 10.0),
-            CodigosPuntoPasajito("P6P8-QR7B", 2.0)
-        )}
-
-    val codigo = editTextTextMultiLine.text.toString()
-            for ( user in validUsersList) {
-                if (user.codigo == codigo) {
-
-                }
-                else {
-                    Toast.makeText(this, "Login Incorrecto!", Toast.LENGTH_LONG).show()
+            CodigosPuntoPasajito("AD53-B2T5", 2.0),
+            CodigosPuntoPasajito("M8Y37-47B2", 5.0),
+            CodigosPuntoPasajito("P6P8-QR7B", 10.0)
+        )
+        recargarpp.setOnClickListener {
+            val codigo = editTextTextMultiLine.text.toString()
+            for ( CodigosPuntoPasajito in validCodigosPuntoPasajito) {
+                if (CodigosPuntoPasajito.codigo != codigo){
+                    Toast.makeText(baseContext, "Código incorrecto", Toast.LENGTH_SHORT).show()
+                }else{
+                    sharedPreferencesManager.sumarSaldo(this, CodigosPuntoPasajito.monto)
+                    Toast.makeText(baseContext, "Código correcto saldo + "+ CodigosPuntoPasajito.monto, Toast.LENGTH_SHORT).show()
+                    finish()
                 }
             }
+        }
+    }
+
  }
 

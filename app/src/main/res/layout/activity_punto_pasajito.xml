@@ -8,7 +8,7 @@
     tools:context=".PuntoPasajito">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/recargarpp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
@@ -24,13 +24,15 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="#9C27B0"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -38,11 +40,14 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="125dp"
         android:text="Ingrese Codigo"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,9 +67,8 @@
         android:id="@+id/imageView12"
         android:layout_width="154dp"
         android:layout_height="207dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="110dp"
-        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

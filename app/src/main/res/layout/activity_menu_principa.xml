@@ -78,7 +78,7 @@
         app:srcCompat="@drawable/bus" />
 
     <ImageView
-        android:id="@+id/recargar"
+        android:id="@+id/recargarpp"
         android:layout_width="94dp"
         android:layout_height="86dp"
         android:layout_marginTop="5dp"
