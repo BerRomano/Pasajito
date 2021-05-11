@@ -6,5 +6,5 @@ data class Usuario(
         @Expose val username: String,
         @Expose val password: String,
         @Expose val correo: String,
-        @Expose val saldo: Double
+        @Expose var saldo: Double
 ): Serializable

@@ -6,6 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_menu_principa.*
 
 class MenuPrincipal : AppCompatActivity() {
+    val sharedPreferencesManager = SharedPreferencesManager()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principa)

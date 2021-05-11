@@ -6,7 +6,6 @@ import com.google.gson.Gson
 class SharedPreferencesManager {
         fun crearUsuario (context: Context, usuario: Usuario){
             val usuarioJson = Gson().toJson(usuario)
-
             val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
             val prefsEditor = prefs.edit()
             prefsEditor.putString("usuario", usuarioJson)
@@ -22,5 +21,11 @@ class SharedPreferencesManager {
         } else {
             return null
         }
+    }
+    fun actualizarSaldo(context: Context, cantidad : Double) {
+        val usuario = obtenerUsuario(context)
+        val nuevoSaldo = usuario?.saldo?.minus(cantidad)
+        usuario?.saldo= nuevoSaldo ?: 0.0
+        crearUsuario(context, usuario!!)
     }
 }

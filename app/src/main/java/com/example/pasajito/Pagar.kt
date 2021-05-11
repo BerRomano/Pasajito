@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_pagar.*
 
 
 class Pagar : AppCompatActivity() {
+    val sharedPreferencesManager = SharedPreferencesManager()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagar)
@@ -36,6 +37,7 @@ class Pagar : AppCompatActivity() {
                 // the content and format of scan message
                // messageText.setText(intentResult.contents)
                 //messageFormat.setText(intentResult.formatName)
+                sharedPreferencesManager.actualizarSaldo(this, intentResult.contents.toDouble())
                 Toast.makeText(baseContext, intentResult.contents, Toast.LENGTH_SHORT).show()
             }
         } else {
