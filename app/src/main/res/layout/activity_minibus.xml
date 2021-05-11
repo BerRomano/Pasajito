@@ -40,10 +40,11 @@
         android:layout_width="148dp"
         android:layout_height="132dp"
         android:layout_marginStart="131dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="132dp"
-        android:src="@drawable/pasajitopagar"
+        android:src="@drawable/pagar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/pagar" />

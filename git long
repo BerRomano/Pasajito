@@ -1,0 +1,299 @@
+[33mcommit 6eaed271cc4c6ff87eee783e006265482d102fb7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sun May 9 21:24:08 2021 -0400
+
+    registro
+
+[33mcommit 5d3925f42665413653884de6d01566c8d94309c2[m
+Merge: bf58ae7 81a2d32
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sun May 9 21:11:16 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit bf58ae786976c41f52c22f8c9e8afcfd36bbd969[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sun May 9 21:11:02 2021 -0400
+
+    registro
+
+[33mcommit 81a2d321380dfd330d7120e613666c1898cf6b5b[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Sun May 9 21:00:20 2021 -0400
+
+    Flujo cambiado
+
+[33mcommit f7fbbb3d0393a47f6413ca83354ffe56688e4de8[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Sun May 9 20:12:18 2021 -0400
+
+    Flujo cambiado
+
+[33mcommit 9e121bcec397387fec0b5b9590dd8a72abd6e92d[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Sun May 9 20:02:42 2021 -0400
+
+    NombresCambiados
+
+[33mcommit 4d327b57b8908fcb4d6d0be4930e457670aa2da8[m
+Merge: b3a1c08 211bb1a
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sun May 9 19:31:34 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit b3a1c08ab396c3c3a119238227fcbe497b658e8a[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sun May 9 19:30:45 2021 -0400
+
+    registro
+
+[33mcommit 211bb1acb55564604d221596addba9b37d98424f[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Sun May 9 18:45:14 2021 -0400
+
+    Correcciones
+
+[33mcommit 38aed70fd8735d94a830deedc5de3bc39149f60d[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Sun May 9 17:56:44 2021 -0400
+
+    Cambios
+
+[33mcommit ffbe73d684e1b2ad0e26fb952dac41962be69ead[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Sun May 9 00:27:13 2021 -0400
+
+    GPS
+
+[33mcommit ededa1428588527fde73d6afad1bcd3ee73a5344[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Sun May 9 00:13:06 2021 -0400
+
+    Flujo mejorado
+
+[33mcommit ccf726af1964675caee4f757631091def657472e[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Sat May 8 22:46:39 2021 -0400
+
+    GPS
+
+[33mcommit 7bc9cc25bb6d9975f34e11db54a408e21f9e34e7[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Fri May 7 22:38:07 2021 -0400
+
+    qr
+
+[33mcommit d465de8974fd445b22e601c91d7342d98cf665a6[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Fri May 7 22:36:18 2021 -0400
+
+    qr
+
+[33mcommit e3a54882d6cc2a88bce75953453b4a6e68f78a30[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Fri May 7 21:43:32 2021 -0400
+
+    escaner qr
+
+[33mcommit 4c1eba1dba013621c7c4b1c21ec402705c144ef2[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Fri May 7 08:17:36 2021 -0400
+
+    cuenta bancaria
+
+[33mcommit 791e321cc129ee76b2aa35dd23e5877e1dc010ed[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Fri May 7 08:13:51 2021 -0400
+
+    registro
+
+[33mcommit 43a8abbe7d1206d5e0d7e6d56c6fb95f49cf734d[m
+Merge: 47ff301 9a5185d
+Author: andre <andreaniaimee@gmail.com>
+Date:   Fri May 7 00:32:51 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       .idea/caches/build_file_checksums.ser
+    #       app/src/main/AndroidManifest.xml
+
+[33mcommit 47ff30190b50783298dbf0e37b14e19ec8009808[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Fri May 7 00:31:31 2021 -0400
+
+    punto pasajito
+
+[33mcommit 9a5185d281303b102383e7829bdf8294e0d8eff9[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 23:37:00 2021 -0400
+
+    Pago
+
+[33mcommit d206e47c4af11d1bd9400d94188c9c9a20dc7edc[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 22:29:20 2021 -0400
+
+    Minibus
+
+[33mcommit 8008d49705e0cb95d5e14d47bb0619084be80b50[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 20:47:25 2021 -0400
+
+    Borre minibus y pagar
+
+[33mcommit 007209ee175eaa1409de96465e8da8687d6c26d9[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 20:46:00 2021 -0400
+
+    Borre kotlin minibus
+
+[33mcommit 4554fa043031f0d79eaf7c93723794f818b1eb10[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 20:43:26 2021 -0400
+
+    Kotlin minibus
+
+[33mcommit 0926f1c75c563a92dce849bccebd96b94e0e46e6[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Thu May 6 17:34:14 2021 -0400
+
+    punto pasajito
+
+[33mcommit ebf635d12bc86daa49580d4fcc53afe5fb502ccd[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Thu May 6 08:45:28 2021 -0400
+
+    Trufi y Taxi
+
+[33mcommit a980f079c8f043d5b667e070a40a4e2f0b3c53ca[m
+Merge: 1c0927a b0a982b
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 00:31:28 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 1c0927ab36bbf95110a0effc53e3046d94d01020[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Thu May 6 00:31:16 2021 -0400
+
+    pantalla minibus
+
+[33mcommit b0a982bf2801e650773751c863b715cc779ac805[m
+Merge: 279ef11 2336a95
+Author: andre <andreaniaimee@gmail.com>
+Date:   Thu May 6 00:17:32 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 279ef11edae059eae35a655a3d70096778d829bf[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Thu May 6 00:17:14 2021 -0400
+
+    punto pasajito
+
+[33mcommit 2336a95b76141d84c5c2cb98ae7265174eae5122[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Wed May 5 23:59:14 2021 -0400
+
+    pantalla minibus
+
+[33mcommit db2cb21e9d063bd1bf7f685ad3ddd36c40e60c92[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Wed May 5 21:59:44 2021 -0400
+
+    Metodo de Pago
+
+[33mcommit 1339b3bc3fa1427a0cb50107088c59d747eb0282[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Wed May 5 20:32:46 2021 -0400
+
+    ahora si
+
+[33mcommit b1055052524fc943eb6fc3cf5b37019d4695bb06[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Wed May 5 19:44:31 2021 -0400
+
+    me falta una pantalla que no se como hacerla
+
+[33mcommit 820e0166e17a6efe0989a1025784ee78bb5909d3[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Sat May 1 17:03:26 2021 -0400
+
+    Soy hermoso
+
+[33mcommit 5f06aa5c187037f7eb74add799c3705340c1797d[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sat May 1 16:48:30 2021 -0400
+
+    lalala puse
+
+[33mcommit 5e8f8730ca1f922661df3bcac14cca0a21c95bb1[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Sat May 1 16:40:33 2021 -0400
+
+    danooo
+
+[33mcommit 059c8f9af16a97fcae7d15393d14323d23170be9[m
+Author: BerRo <ber.romano27@gmail.com>
+Date:   Sat May 1 16:35:14 2021 -0400
+
+    chau chau
+
+[33mcommit 9e7cc57299f4a880188950829f831b1304951f0c[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Sat May 1 16:14:30 2021 -0400
+
+    lalala puse
+
+[33mcommit 06c21a3430702d64cd85484b1229452ea78475ba[m
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Fri Apr 30 22:45:16 2021 -0400
+
+    tengo hambre
+
+[33mcommit 11e8e739d77dc0d918899c32021ba463d54338e4[m
+Merge: b5f006d c8d03f2
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Fri Apr 30 22:44:01 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       app/src/main/res/layout/activity_inicio_de_sesion2.xml
+
+[33mcommit c8d03f251a7bed8ab2b80e050ec0f24b6a96806b[m
+Author: andre <andreaniaimee@gmail.com>
+Date:   Fri Apr 30 22:40:50 2021 -0400
+
+    wuwu
+
+[33mcommit b5f006dd103c7034d44787f785c9d7effd78f93e[m
+Merge: 8c0ee52 8d2e113
+Author: Emanuel <Emanuelsalasali4@gmail.com>
+Date:   Fri Apr 30 22:38:36 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       app/src/main/res/layout/activity_inicio_de_sesion2.xml
+
+[33mcommit 72ad4656c1d99d9dc235a5e7147fd09cacc2118a[m
+Merge: 11399f7 8d2e113
+Author: andre <andreaniaimee@gmail.com>
+Date:   Fri Apr 30 22:37:42 2021 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       app/src/main/res/layout/activity_inicio_de_sesion2.xml
+
+[33mcommit 8d2e1134f7ab65736d49230e9d58bd96f9f38dd2[m
+Author: Danolito2134 <danieloliverat@gmail.com>
+Date:   Fri Apr 30 22:36:53 2021 -0400
+
+    fhujrfjty
+
+[33mcommit 8c0ee52545bfc4a0fde4077476a58edd7f3e974f[m
+Author: Emanuel <Emanuelsalasali4@g

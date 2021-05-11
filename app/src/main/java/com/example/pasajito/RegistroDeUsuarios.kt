@@ -17,7 +17,7 @@ class RegistroDeUsuarios : AppCompatActivity() {
             if (editTextTextPassword3.text.toString() == editTextTextPassword4.text.toString()) {
                 val intent = Intent(this, MenuPrincipal::class.java)
                 val usuarioAGuardar = Usuario(editTextTextPersonName2.text.toString(), editTextTextPassword3.text.toString(),
-                        editTextTextEmailAddress2.text.toString(), 0.0)
+                        editTextTextEmailAddress2.text.toString(), 20.0)
                 sharedPreferencesManager.crearUsuario(this, usuarioAGuardar)
                 startActivity(intent)
             }else{
