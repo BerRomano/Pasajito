@@ -13,7 +13,7 @@ class MenuPrincipal : AppCompatActivity() {
         textView2.text = sharedPreferencesManager.obtenerSaldo(this).toString()
 
         minibusBoton.setOnClickListener {
-            val intent = Intent(this, Micro::class.java)
+            val intent = Intent(this, Minibus::class.java)
             startActivity(intent)
         }
 
