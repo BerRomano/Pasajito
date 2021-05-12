@@ -14,18 +14,20 @@ class SharedPreferencesManager {
             usuariosRegistrados.add(usuario)
 
             val usuariosRegistradosJson = Gson().toJson(usuariosRegistrados)
+            val usuarioJson = Gson().toJson(usuario)
 
             val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
             val prefsEditor = prefs.edit()
             prefsEditor.putString("usuarios", usuariosRegistradosJson)
+            prefsEditor.putString("usuarioIniciado", usuarioJson)
             prefsEditor.apply()
         }
     }
     fun guardarUsuarioIniciado (context: Context, usuario: Usuario){
-        val usuarioJson = Gson().toJson(usuario)
+
         val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
         val prefsEditor = prefs.edit()
-        prefsEditor.putString("usuarioIniciado", usuarioJson)
+
         prefsEditor.apply()
     }
     fun obtenerUsuario(context: Context): Usuario?{
