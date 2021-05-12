@@ -30,8 +30,8 @@ class Rutas : AppCompatActivity(), OnMapReadyCallback {
         with(googleMap) {
             val markerColor= BitmapDescriptorFactory
                 .defaultMarker(BitmapDescriptorFactory.HUE_RED)
-            moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(-16.509269, -68.127361),14f))
-            addMarker(MarkerOptions().icon(markerColor).title("Parada minibus 335").position(LatLng(-16.509269, -68.127361)))
+            moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(-16.544316, -68.074944),14f))
+            addMarker(MarkerOptions().icon(markerColor).title("Parada minibus 335").position(LatLng(-16.544316, -68.074944)))
         }
 
         atrasmaps.setOnClickListener {
