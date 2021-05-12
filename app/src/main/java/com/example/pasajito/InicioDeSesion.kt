@@ -20,7 +20,7 @@ class InicioDeSesion : AppCompatActivity() {
            for (validUser in validUsers) {
                    if ((validUser.username == username || validUser.correo == correo) && validUser.password == password) {
                        val intent = Intent(this, MenuPrincipal::class.java)
-
+                       sharedPreferencesManager.guardarUsuarioIniciado(this,validUser)
                        startActivity(intent)
                }
            }
