@@ -16,12 +16,12 @@ class InicioDeSesion : AppCompatActivity() {
            val username = editTextTextEmailAddress1.text.toString()
            val password = editTextTextPassword1.text.toString()
            val correo = editTextTextEmailAddress1.text.toString()
-           val validUsers = sharedPreferencesManager.obtenerUsuarios(this)
-           for (validUser in validUsers) {
-                   if ((validUser.username == username || validUser.correo == correo) && validUser.password == password) {
-                       val intent = Intent(this, MenuPrincipal::class.java)
-                       sharedPreferencesManager.guardarUsuarioIniciado(this,validUser)
-                       startActivity(intent)
+           val validUser = sharedPreferencesManager.obtenerUsuario(this)
+           if (validUser != null) {
+               if((validUser.username == username || validUser.correo == correo) && validUser.password == password) {
+                   val intent = Intent(this, MenuPrincipal::class.java)
+
+                   startActivity(intent)
                }
            }
         }
