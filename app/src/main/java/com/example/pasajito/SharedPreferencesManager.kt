@@ -41,7 +41,7 @@ class SharedPreferencesManager {
 
     fun obtenerUsuarios(context: Context): List<Usuario> {
         val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
-        val usuarioJson = prefs.getString("usuario", null)
+        val usuarioJson = prefs.getString("usuarios", null)
         if(usuarioJson != null) {
             val usuarios: List<Usuario> = Gson().fromJson(usuarioJson)
             return usuarios
