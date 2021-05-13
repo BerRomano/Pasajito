@@ -12,10 +12,8 @@ class SharedPreferencesManager {
         if(usuarioExistente == null) {
             val usuariosRegistrados = obtenerUsuarios(context).toMutableList()
             usuariosRegistrados.add(usuario)
-
             val usuariosRegistradosJson = Gson().toJson(usuariosRegistrados)
             val usuarioJson = Gson().toJson(usuario)
-
             val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
             val prefsEditor = prefs.edit()
             prefsEditor.putString("usuarios", usuariosRegistradosJson)
@@ -24,10 +22,10 @@ class SharedPreferencesManager {
         }
     }
     fun guardarUsuarioIniciado (context: Context, usuario: Usuario){
-
+        val usuarioJson = Gson().toJson(usuario)
         val prefs = context.getSharedPreferences("datos", MODE_PRIVATE)
         val prefsEditor = prefs.edit()
-
+        prefsEditor.putString("usuarioIniciado", usuarioJson)
         prefsEditor.apply()
     }
     fun obtenerUsuario(context: Context): Usuario?{
@@ -54,13 +52,13 @@ class SharedPreferencesManager {
     fun restarSaldo(context: Context, cantidad : Double) {
         val usuario = obtenerUsuario(context)
         val nuevoSaldo = usuario?.saldo?.minus(cantidad)
-        usuario?.saldo= nuevoSaldo ?: 0.0
+        usuario!!.saldo= nuevoSaldo!!
         crearUsuario(context, usuario!!)
     }
     fun sumarSaldo(context: Context, cantidad : Double) {
         val usuario = obtenerUsuario(context)
         val nuevoSaldo = usuario?.saldo?.plus(cantidad)
-        usuario?.saldo = nuevoSaldo ?: 0.0
+        usuario!!.saldo = nuevoSaldo!!
         crearUsuario(context, usuario!!)
     }
     fun obtenerSaldo(context: Context): Double? {
